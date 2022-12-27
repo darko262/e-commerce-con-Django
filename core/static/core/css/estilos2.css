@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.header{
+    background-color:white;
+}
+.nav-link{
+    color: darkblue;
+}
+
+.c-item {
+    height: 40rem;
+    border-radius: 20px;
+
+}
+.c-image{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.carousel-caption {
+    text-align: center;
+    top: 50%;
+    left: 70%;
+}
+.carousel-caption h1{
+    font-size: 5rem;
+}
+.envio{
+    height: 50%;
+}
+.fw-normal {
+    top: 0;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    width: 15rem;
+    border-radius: 5rem;   
+}
+.col-lg-4{
+
+    text-align: center;
+
+}
+.quesomos{
+    text-align: center;
+    justify-content: center;
+}
+.quesomos h1{
+    font-size: 5rem;
+} 
+
+.hero-about{    
+    display: grid;
+    place-items: center; 
+
+}
+.about-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.texto-encima{
+    position: absolute;
+    top: 34%;
+    left: 77%;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-hero-block {
+    position: relative;
+    text-align: center;
+    height: 5rem;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    font-size: 1.5rem;
+    color: rgb(247, 238, 238);
+    
+}
+.footer{
+    
+}
+.titulo-cat h1{
+    text-align: center;
+    font-size: 5rem;
+}
+.historia{
+
+    margin: 4rem;
+    justify-content: start;
+}
+.colhis p{
+    text-align: center;
+    margin-top: 30%;
+    font-size: 1.5rem;
+}
+.boton-historia{
+    font-size: 2rem;
+}
+.ubicacion{
+    text-align: center;
+}
+.card{
+    
+    border-radius: 1rem;
+    border: 1px solid rgb(170, 155, 155);
+    
+}
+
+.card-img-top{
+    height: 30rem;
+    width: 100%;
+}
+.img-box{
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+
+.img-box img{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.thumb-wrapper{
+    text-align: center;
+}
+.columna-productos{
+    height: 100%;
+    background-color: black;
+    display:flex;
+}
+.productos-cont {
+    padding-top: 4rem;
+}
+.ubicacion{
+    padding-top: 4rem;
+}
+.footer{
+    background-image: url(../imagenes/footer-background-01.jpg);
+    background-size: cover;
+    -webkit-filter:brightness(0.8)
+}

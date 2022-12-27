@@ -1,0 +1,288 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<div id="hero-carousel" class="carousel slide " data-bs-ride="carousel" data-aos="zoom-in">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item c-item active">
+      <img src="{% static 'core/imagenes/titan1.jpeg' %}" class="d-block w-100 c-image" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item c-item ">
+      <img src="{% static 'core/imagenes/titan1.jpeg' %}" class="d-block w-100 c-image" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item c-item ">
+      <img src="{% static 'core/imagenes/icono4.jpg' %}" class="d-block w-100 c-image" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--<section class="historia">
+  <div class="container">
+    <div class="row quesomos">
+      <h1 data-aos="zoom-in" data-aos-delay="400"> Quienes somos</h1>
+      <div class="col-lg-4 colhis">
+        <img src="{% static 'core/imagenes/alimentos-para-mascotas.png' %}" alt="" class="img-thumbnail">
+
+      </div>
+      <div class="col-lg-4 colhis">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+        <a class="btn btn-primary boton-historia" href="{% url 'about' %}" role="button">Link</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>-->
+<section class="favoritos">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2> Productos favoritos</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="0">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="thumb-wrapper">
+                    <div class="img-box">
+                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="thumb-content">
+                      <h4>Apple iPad</h4>
+                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                      <div class="star-rating">
+                        <ul class="list-inline">
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev" >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="categoria">
+  <div class="container category">
+    <div class="row titulo-cat" data-aos="zoom-in">
+      <h1> Categorias</h1>
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/alimentos-para-mascotas.png' %}" alt="" class="fw-normal">
+        <h2>Alimentos</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/juguete-para-mascotas.png' %}" alt="" class="fw-normal">
+        <h2>Juguetes</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/ubicacion.png' %}" alt="" class="fw-normal">
+        <h2>Accesorios</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="marker">
+  <div class="container marketing" data-aos="zoom-in">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/entrega-rapida.png' %}" alt="" class="fw-normal">
+        <h2>Envios Gratis</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/price-tag.png' %}" alt="" class="fw-normal">
+        <h2>El mejor Precio</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'core/imagenes/calidad.png' %}" alt="" class="fw-normal">
+        <h2>La mejor calidad</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+          electronic</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

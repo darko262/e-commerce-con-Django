@@ -1,0 +1,111 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Productos{% endblock %}
+
+{% block content2 %}
+<div class="container-fluid">
+    <div class="hero-about">
+        <div class="about-hero-block">
+            <h1 class="page-title">
+                About us
+            </h1>
+            <p class="detail-paragraph subpage">The attractions of ceramics lie partly in its contradictions. It is both
+                difficult and easy, with an element
+                beyond our control. It is both extremely fragile and durable. Like 'Sumi' ink painting, it does not lend
+                itself to erasures and indecision.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content6 %}
+
+<div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark columna-productos">
+    <h1 class="titulo-barra"> Filtrar por </h1>
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Right-aligned menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content3 %}
+
+{% for producto in productos reversed %}
+<div class="col">
+    <div class="card shadow-sm ">
+        <img class="card-img-top" src="{{producto.image.url}}" alt="">
+        <div class="card-body">
+            <h2 class="card-title"> {{producto.title}}</h2>
+            <p class="card-text">{{producto.content}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                </div>
+                <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
+
+
+
+<!--<div class="col-lg-6">
+    <div class="product-item">
+        <div class="">
+            <div class="bg-faded p-5 d-flex mr-auto rounded">
+                <h2 class="section-heading mb-0">
+                    <span class="section-heading-upper">{{producto.subtitle}}</span>
+                    <span class="section-heading-lower">{{producto.title}}</span>
+                </h2>
+            </div>
+        </div>
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{producto.image.url}}"
+            alt="">
+        <div class="product-item-description d-flex ml-auto">
+            <div class="bg-faded p-5 rounded">
+                <p class="mb-0">{{producto.content}}</p>
+            </div>
+        </div>
+    </div>
+</div>->
+
+<div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <rect width="100%" height="100%" fill="#55595c"></rect>
+            <div class="hero-about">
+        <div class="about-hero-block">
+            <h1 class="page-title">
+                About us
+            </h1>
+            <p class="detail-paragraph subpage">The attractions of ceramics lie partly in its contradictions. It is both
+                difficult and easy, with an element
+                beyond our control. It is both extremely fragile and durable. Like 'Sumi' ink painting, it does not lend
+                itself to erasures and indecision.</p>
+        </div>
+    </div>

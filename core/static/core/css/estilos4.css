@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    background-color: white-space#f1ecec;
+    /* Pattern from https://www.heropatterns.com/ */
+    color: #1e272e;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    /* deja los elemento de dorma horizontal*/
+    justify-content: center;
+    /* el contenido lo centra*/
+    align-items: center;
+    /*centra el textro de forma vertical*/
+    color: black;
+}
+
+.logo img {
+    height: 2.0rem;
+}
+
+.nav_menu {
+    background-color: rgb(115, 53, 3);
+}
+
+.nav-container {
+    max-width: 120rem;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.nav-container a:hover {
+    background-color: rgb(216, 223, 27);
+    color: black;
+}
+@media (min-width: 480px) {
+    
+}
+@media (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+    }
+}
+
+.imagen-principal{
+    background-image: url(../imagenes/icono.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 74rem;
+    padding: 100px;
+    position: relative;
+}
+.contenido-principal{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    justify-content: right;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.contenido-principal h2{
+    font-family:fantasy;
+    font-size: 16rem;
+}
+.contenido-principal span{
+    font-family:fantasy;
+    font-size: 8rem;
+    color: aqua;    
+}
+.header{
+    background-color: black;
+}

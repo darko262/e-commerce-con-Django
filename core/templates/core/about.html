@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Nosotros{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+    <img src="../../static/core/imagenes/sobre-nosotros.jpg" alt="" class="img-fluid">
+    <h1 class="texto-encima">Título de una publicación de blog destacada más extensa</h1>
+
+</div>
+
+
+<div class="container ubicacion">
+    <div class="row " data-aos="zoom-in">
+        <h1> Ubicacion</h1>
+        <div class="col-lg-6">
+            <img src="{% static 'core/imagenes/ubicacion.png' %}" alt="" class="fw-normal">
+            <h2>Nuesta tienda</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into
+                electronic</p>
+
+        </div>
+        <div class="col-lg-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.8688003789975!2d-72.62005266747651!3d-38.74377283032383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d407508df2a1%3A0x7d8d4cfaa7ad9a9d!2sPje.%20A%2C%20Temuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses-419!2scl!4v1670334135114!5m2!1ses-419!2scl"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
