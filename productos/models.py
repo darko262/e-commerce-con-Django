@@ -42,4 +42,33 @@ class Producto(models.Model):
     def __str__(self):
         return self.title
 
+
+class VarationManager(models.Manager):
+    def colors(self):
+        return super(VarationManager,self).filter(variation_category='color',is_active=True)
+    def tallas(self):
+        return super(VarationManager,self).filter(variation_category='talla',is_active=True)
+    def kilors(self):
+        return super(VarationManager,self).filter(variation_category='kilos',is_active=True)
+        
+
+
+variation_category_choise = (
+    ('color','color'),
+    ('talla','talla'),
+    ('kilos','kilos'),
+)
+
+class Variation(models.Model):
+    product=models.ForeignKey(Producto,on_delete=models.CASCADE)
+    variation_category = models.CharField(max_length=100, choices=variation_category_choise )
+    variation_value= models.CharField(max_length=100)
+    is_active = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
+    objects = VarationManager()
+
+    def __str__(self):
+        return self.variation_category + ':' + self.variation_value
+
+
   

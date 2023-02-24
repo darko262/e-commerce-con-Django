@@ -3,41 +3,29 @@
 
 {% block title %}Inicio{% endblock %}
 {% block content %}
-<div id="hero-carousel" class="carousel slide " data-bs-ride="carousel" data-aos="zoom-in">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
-      aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item c-item active">
-      <img src="{% static 'core/imagenes/titan1.jpeg' %}" class="d-block w-100 c-image" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>First slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
+
+<section class="py-lg-16 py-8 parte1">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-6 mb-lg-0 ">
+        <div class="position-relative ">
+          <img src="{% static 'core/imagenes/lateral.png' %}" alt="" class=" top-0 start-0 img-fluid num1" width="50%">
+          <div class="izqr">
+            <h1 class="">Bienvenidos a</h1>
+            <h2 class="">SmartPet</h2>
+            <img src="{% static 'core/imagenes/logo2.png' %}" alt="" class=" position-absolute " width="70%">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div class="position-relative">
+          <img src="{% static 'core/imagenes/perrito.png' %}" alt="" class=" top-0 start-0 img-fluid num1">
+        </div>
       </div>
     </div>
-    <div class="carousel-item c-item ">
-      <img src="{% static 'core/imagenes/titan1.jpeg' %}" class="d-block w-100 c-image" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>First slide label</h1>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item c-item ">
-      <img src="{% static 'core/imagenes/icono4.jpg' %}" class="d-block w-100 c-image" alt="...">
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>
 
 <!--<section class="historia">
   <div class="container">
@@ -61,200 +49,196 @@
   </div>
 
 </section>-->
-<section class="favoritos">
-  <div class="container">
+
+
+
+<section class="categoria py-8 py-md-11 border-bottom parte2 position-relative">
+  <div class="container category">
     <div class="row">
-      <div class="col-md-12">
-        <h2> Productos favoritos</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="0">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                  <div class="thumb-wrapper">
-                    <div class="img-box">
-                      <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="thumb-content">
-                      <h4>Apple iPad</h4>
-                      <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
-                      <div class="star-rating">
-                        <ul class="list-inline">
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                          <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                        </ul>
-                      </div>
-                      <a href="#" class="btn btn-primary">Add to Cart</a>
-                    </div>
-                  </div>
-                </div>
-
-
-
-              </div>
-            </div>
+      <div class="col-xl-8 col-lg-9 colum">
+        <div class="row titulo-cat" data-aos="zoom-in">
+          <h1> Categorias</h1>
+          <div class="col-sm-4 px-2 mb-grid-gutter">
+            <img src="{% static 'core/imagenes/alimentos-para-mascotas.png' %}" alt="" class="fw-normal">
+            <h2>Alimentos</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic</p>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev" >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="col-sm-4 px-2 mb-grid-gutter">
+            <img src="{% static 'core/imagenes/juguete-para-mascotas.png' %}" alt="" class="fw-normal">
+            <h2>Juguetes</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic</p>
+          </div>
+          <div class="col-sm-4 px-2 mb-grid-gutter">
+            <img src="{% static 'core/imagenes/ubicacion.png' %}" alt="" class="fw-normal">
+            <h2>Accesorios</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 </section>
-<section class="categoria">
-  <div class="container category">
-    <div class="row titulo-cat" data-aos="zoom-in">
-      <h1> Categorias</h1>
-      <div class="col-lg-4">
-        <img src="{% static 'core/imagenes/alimentos-para-mascotas.png' %}" alt="" class="fw-normal">
-        <h2>Alimentos</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="{% static 'core/imagenes/juguete-para-mascotas.png' %}" alt="" class="fw-normal">
-        <h2>Juguetes</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic</p>
-      </div>
-      <div class="col-lg-4">
-        <img src="{% static 'core/imagenes/ubicacion.png' %}" alt="" class="fw-normal">
-        <h2>Accesorios</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic</p>
-      </div>
+
+<section class="container destacado">
+  <div class=" destacado-fondo">
+    <div class="container">
+      <section class="favoritos">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center"> Marcas Destacadas</h2>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="0">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/R.png" alt="" class="img-fluid">
+                          </div>
+      
+                        </div>
+                      </div>
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/euka.jpg" alt="" class="img-fluid">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/patagon.webp" alt="" class="img-fluid">
+                          </div>
+      
+                        </div>
+                      </div>
+      
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="row">
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                          </div>
+      
+                        </div>
+                      </div>
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                          </div>
+      
+                        </div>
+                      </div>
+                      <div class="col-sm-4 marca">
+                        <div class="thumb-wrapper">
+                          <div class="img-box">
+                            <img src="../../static/core/imagenes/alimentos-para-mascotas.png" alt="" class="img-fluid">
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="arriba-izq">
+    </div>
+    <div class="abajo-izq">
+    </div>
+    <div class="abajo-der">
+    </div>
+    <div class="arriba-der">
     </div>
   </div>
+
 </section>
-<section class="marker">
+<section class="container producto-destacado">
+  <div class="col-lg-8 container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {% for producto in productos %}
+        <div class="col">
+            <div class="card shadow carta">
+                <a href="{{ producto.get_url }}"><img class="card-img-top img-fluid "
+                        src="{{producto.image.url}}" alt=""></a>
+                <div class="card-body botoncambio ">
+                    <a href="{{ producto.get_url }}">
+                        <h2 class="card-title"> {{producto.title}}</h2>
+                    </a>
+                    <p class="card-text">{{producto.content}}</p>
+                    <div class="d-flex justify-content-between align-items-center botoncambio">
+                        <div class="btn-group botoncambio">
+                            <a href="{% url 'add_cart' producto.id %}" class="btn btn-block btn-success">agregar
+                                al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+
+
+
+</section>
+
+
+<section class="otro container-fluid">
+  <div class="row position-relative">
+    <div class="col-lg-6 otro1" data-aos="zoom-in-right">
+      <div class="row text-primary text-end texto">
+
+        <h1>Envios a Todo Chile</h1>
+        <span><button type="button" class="btn btn-primary">Primary</button></span>
+        <br>
+
+      </div>
+
+      <div class="row">
+        <img src="{% static 'core/imagenes/lateral.png' %}" alt="" class="lateral1">
+        <img src="{% static 'core/imagenes/cat-svgrepo-com.svg' %}" alt=""class="gato1">
+
+      </div>
+
+
+
+
+    </div>
+    <div class="col-lg-6 otro2 " data-aos="zoom-in-left">
+      <h1 class="text-center">Conocenos</h1>
+      <div class="row text-center">
+        <span><button type="button" class="btn btn-primary">Primary</button></span>
+      </div>
+      <img src="{% static 'core/imagenes/Nosotros.png' %}" alt="">
+    </div>
+  </div>
+
+</section>
+
+<section class="marker py-6 py-md-8 border-bottom">
   <div class="container marketing" data-aos="zoom-in">
     <div class="row">
       <div class="col-lg-4">

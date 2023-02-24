@@ -3,12 +3,16 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-.header{
-    background-color:white;
+.body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Lora', serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(125deg, #ffffb2 0, #fff6af 10%, #ffe8ac 20%, #ffd9a8 30%, #ffcaa3 40%, #f2b99d 50%, #dda996 60%, #cb9c90 70%, #ba918a 80%, #ab8885 90%, #9f8080 100%);
 }
 .nav-link{
     color: darkblue;
@@ -28,6 +32,7 @@ html {
     text-align: center;
     top: 50%;
     left: 70%;
+
 }
 .carousel-caption h1{
     font-size: 5rem;
@@ -85,9 +90,7 @@ html {
     color: rgb(247, 238, 238);
     
 }
-.footer{
-    
-}
+
 .titulo-cat h1{
     text-align: center;
     font-size: 5rem;
@@ -140,7 +143,7 @@ html {
 }
 .columna-productos{
     height: 100%;
-    background-color: black;
+    
     display:flex;
 }
 .productos-cont {
@@ -150,7 +153,181 @@ html {
     padding-top: 4rem;
 }
 .footer{
-    background-image: url(../imagenes/footer-background-01.jpg);
+    
+    background-color: #7E1470;
+    border-top-left-radius:  29%;
+    border-top-right-radius:  29%;
     background-size: cover;
-    -webkit-filter:brightness(0.8)
+    /*-webkit-filter:brightness(0.8)*/
+}
+.badge-black{
+    color: black;
+    font-size: 1rem;
+}
+
+.colum{
+    background-image: url(../imagenes/Simple\ Shiny.svg);
+    /*background-color: coral;*/
+    border-top-left-radius:  19%;
+    border-top-right-radius:  19%;
+    border-bottom-left-radius: 9%;
+    border-bottom-right-radius: 9%;
+    /*border-radius: 53% 47% 48% 52% / 79% 80% 20% 21%  ;
+    border-bottom: 5%;*/
+
+}
+.categoria{
+    padding: 2rem;
+}
+
+.parte2{
+    /*background: url(../imagenes/wavesOpacity.svg);*/
+    margin-top: -10rem;
+    
+}
+.izqr{
+position: absolute;
+top: 0%;
+right: 0;
+font-size: 2rem;
+}
+.marca{
+    height: 19rem;
+    object-fit: contain;
+    
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+.marca:hover{
+   /* transform: scale(1.15);*/
+    filter: none;
+}
+.otro{
+    margin-top: 5rem;
+    height: 51rem;
+    background-image: url(../imagenes/Simple\ Shiny.svg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.otro1{
+    position: relative;
+    overflow: hidden;
+}
+.otro1 .texto{
+    position: absolute;
+    top: 50%;
+    left:74%;
+    transform: translate(-50%, -50%);
+  
+}
+.otro1 .lateral1{
+    width: 40rem;  
+    transition: all 0.7s;
+}
+.otro1 .gato1{
+    position: absolute;
+    width: 10rem;
+    top: 50%;
+    right:-35%;
+    transition: all 0.7s;
+}
+.otro1:hover .gato1{
+    transform: scale(1.3);
+    right: 0;
+}
+.otro2 img{
+    
+    width: 30rem;
+    position: absolute;
+    right: 0;
+
+}
+.destacado-fondo{
+    background: white;
+    position: relative;
+    height: 16rem;
+    
+    
+    
+}
+.inst{
+    background-image: url(../imagenes/Simple\ Shiny.svg);
+    background-position: center;
+    background-size: cover;
+}
+.arriba-izq{
+    position: absolute;
+    background: white;
+    height: 12rem;
+    width: 12rem;
+    top: -2rem;
+    left: -5rem;
+    border-radius: 50%;
+}
+.abajo-izq{
+    position: absolute;
+    background: white;
+    height: 12rem;
+    width: 12rem;
+    top: 7rem;
+    left: -5rem;
+    border-radius: 50%;
+}
+.abajo-der{
+    position: absolute;
+    background: white;
+    height: 12rem;
+    width: 12rem;
+    top: 7rem;
+    right: -5rem;
+    border-radius: 50%;
+}
+.arriba-der{
+    position: absolute;
+    background: white;
+    
+    height: 12rem;
+    width: 12rem;
+    top: -2rem;
+    right: -5rem;
+    border-radius: 50%;
+}
+.img-box{
+    height: 7rem;
+}
+.producto-destacado{
+    margin-top: 5rem;
+    
+
+}
+.carta .botoncambio{
+    visibility: hidden;
+    display: none;
+    
+}
+.carta:hover .botoncambio{
+    display: block;
+    visibility: visible;
+}
+.logitos{
+    transition: all 0.3s;
+}
+.logitos:hover{
+    transform: scale(1.3);
+}
+.fcart{
+    height: 50rem;
+}
+.laterall{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.37rem;
 }

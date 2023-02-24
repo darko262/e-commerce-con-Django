@@ -1,0 +1,120 @@
+<header class="px-3 py-2 ">
+    <div class="navbar-sticky">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-xxl-2 col-lg-2">
+            <a href="{% url 'principal' %}" class="navbar-brand d-none d-sm-block flex-shrink-0">
+              <img src="{% static 'core/imagenes/logo1.png' %}" width="142" alt="Cartzilla">
+            </a>
+          </div>
+          <div class="col-lg col-sm col-md col-6 flex-grow-0">
+            <div class="category-wrap dropdown d-inline-block float-right">
+              <div class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'productos' %}">Todos</a></li>
+                  {% for category in links %}
+                  <li><a class="dropdown-item" href="{{category.get_url}}">{{category.category_name}}</a></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div> <!-- category-wrap.// -->
+          </div>
+          <div class="col-lg-6 col-lg-5 d-none d-lg-block">
+
+            <form action="{% url 'search' %}" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <div class="input-group ">
+                <input class="form-control rounded-3" placeholder="Buscar productos" name="keyword">
+                <span class="input-group-append">
+                  <button class="btn bg-white border border-start-0 ms-n10" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="feather feather-search">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-2 col-xxl-1 text-end d-none d-lg-block">
+            <div class="d-flex justify-content-end mb-3 mb-lg-0">
+              <div class="list-inline">
+                <div class="widget-header">
+                  <small class="title text-muted">Bienvenido visitante!</small>
+                  <div>
+                    <a href="./signin.html">Login</a> <span class="dark-transp"> | </span>
+                    <a href="./register.html"> Registrar</a>
+                  </div>
+                </div>
+                <a class="text-muted position-relative " data-bs-toggle="canvas" data-bs-target="#offcanvasRight"
+                  href="{% url 'cart' %}" role="button" aria-controls="offcanvasRight">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-shopping-bag">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                    {{ cart_count }}
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row w-100 align-items-center g-lg-2 g-0">
+            <div class="container">
+              <div class="col-12 text-center">
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="{% url 'principal' %}" class="nav-link text-secondary logitos">
+                      <img src="{% static 'core/imagenes/refugio.png' %}" width="24" height="24" alt=""
+                        class="bi d-block mx-auto mb-1 logitos">
+                      Inicio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="{% url 'about' %}" class="nav-link text-white logitos">
+                      <img src="{% static 'core/imagenes/gato.png' %}" width="24" height="24" alt=""
+                        class="bi d-block mx-auto mb-1 logitos">
+                      Nosotros
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="{% url 'productos' %}" class="nav-link text-white logitos">
+                      <img src="{% static 'core/imagenes/paramascotas.png' %}" width="24" height="24" alt=""
+                        class="bi d-block mx-auto mb-1 ">
+                      Productos
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white logitos">
+                      <img src="{% static 'core/imagenes/masticacion.png' %}" width="24" height="24" alt=""
+                        class="bi d-block mx-auto mb-1 logitos ">
+                      Contactanos
+                    </a>
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </header>

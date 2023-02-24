@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib.messages import constants as mensajes_de_error 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-dq2bjvrg5sazbi$4r=kj%hxln$l0zi8kb6a$4vt!p=o6!u$tak
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://webempresa-env.eba-gmqn3b8n.us-west-2.elasticbeanstalk.com/']
 
 
 # Application definition
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'core',
     'productos.apps.ProductosConfig',
     'carts',
+    'accounts',
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
@@ -71,6 +73,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'productos.contex_processors.menu_links',
+                'carts.context_processors.counter',
             ],
         },
     },
@@ -135,3 +138,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+MESSAGE_TAGS={
+    mensajes_de_error.DEBUG: 'debug',
+    mensajes_de_error.INFO: 'info',
+    mensajes_de_error.SUCCESS: 'success',
+    mensajes_de_error.WARNING: 'warning',
+    mensajes_de_error.ERROR: 'danger',
+}
+#EMAIL_BACKEND='django.core.mail.backends.stmp.EmailBackend'
