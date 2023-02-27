@@ -26,7 +26,7 @@ SECRET_KEY = '*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tienda-django-production-37da.up.railway.app']
+ALLOWED_HOSTS = ['django-production-8609.up.railway.app']
 
 
 # Application definition
