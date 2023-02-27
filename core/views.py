@@ -28,7 +28,7 @@ def principal(request ,category_slug=None):
         'productos':paged_product,#'filtrado' : filtro 
         'product_count':product_count,
     }
-    return render(request, "core/principal.html ",contex)
+    return render(request, "core/principal.html")
 
 
 # Create your views here.
