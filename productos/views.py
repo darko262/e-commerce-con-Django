@@ -32,7 +32,7 @@ def productos(request ,category_slug=None):
         'productos':paged_product,#'filtrado' : filtro 
         'product_count':product_count,
     }
-    return render(request, 'productos/productos.html ',contex)
+    return render(request, 'productos/productos.html',contex)
 
 def productos_detail(request, category_slug, product_slug):
     try:
